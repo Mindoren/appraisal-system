@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href=" css/employee.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="page-content">
+
+    <h2>My Profile</h2>
+
+    <div class="profile-container">
+
+        <!-- Photo Section -->
+
+        <div class="photo-section">
+
+            <img
+                src="../images/default-profile.png"
+                id="profilePreview"
+                class="profile-image"
+                alt="Profile Photo">
+
+            <input
+                type="file"
+                id="profilePhoto"
+                accept="image/*"
+                hidden>
+
+            <button
+                type="button"
+                class="upload-btn"
+                onclick="document.getElementById('profilePhoto').click()">
+
+                <i class="fas fa-camera"></i>
+                Upload Photo
+
+            </button>
+
+        </div>
+
+        <!-- Details Section -->
+
+        <div class="details-section">
+
+            <form id="profileForm">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        value="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        value="john@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label>ID Number</label>
+                    <input
+                        type="text"
+                        id="idNumber"
+                        value="12345678"
+                        readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Department</label>
+
+                    <select id="department">
+
+                        <option>ICT</option>
+                        <option>Finance</option>
+                        <option>Human Resource</option>
+                        <option>Agriculture</option>
+                        <option>Health</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Directorate</label>
+
+                    <select id="directorate">
+
+                        <option>ICT & E-Government</option>
+                        <option>Finance & Economic Planning</option>
+                        <option>Public Service Management</option>
+                        <option>Health Services</option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="save-btn">
+
+                    Save Changes
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src=" js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #eef2f7 0%, #dfede9 100%);
+    --card-bg: #ffffff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --kpi-bg: #e0f2fe;
+    --kpi-text: #0369a1;
+    --comp-bg: #dcfce7;
+    --comp-text: #15803d;
+    --btn-bg: #e2e8f0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.browser-mockup {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 480px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-section h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.score-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.score-bar.kpi {
+    background-color: var(--kpi-bg);
+    color: var(--kpi-text);
+}
+
+.score-bar.competencies {
+    background-color: var(--comp-bg);
+    color: var(--comp-text);
+}
+
+.overall-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 25px 0;
+    padding: 0 10px;
+}
+
+.overall-left .label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.overall-left .score {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+
+/* SVG Circular Progress Indicator */
+.circle-progress {
+    width: 60px;
+    height: 60px;
+    transform: rotate(-90deg);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #f1f5f9;
+    stroke-width: 5;
+}
+
+.circle-fill {
+    fill: none;
+    stroke: #7dd3fc;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 157;
+    /* 4.3 out of 5 translates to roughly 86% of 157 circumference */
+    stroke-dashoffset: 22; 
+}
+
+.divider {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.footer-actions {
+    text-align: center;
+}
+
+.feedback-btn {
+    background-color: var(--btn-bg);
+    color: var(--text-dark);
+    border: none;
+    padding: 10px 24px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.feedback-btn:hover {
+    background-color: #cbd5e1;
+}
+
+.placeholder-box {
+    height: 45px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px dashed #e2e8f0;
+}

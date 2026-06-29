@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Dashboard</title>
+
+<link rel="stylesheet" href="css/employee.css">
+<script src="/backend/server.js"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+        <a href="home.html">
+        <div class="logo">
+
+            <img src="/img/logo.jpg">
+
+            <h3>SPAS</h3>
+
+        </div>
+       </a>
+        <ul>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="workplan.html">
+                    <i class="fas fa-clipboard-list"></i>
+                    Work Plans
+                </a>
+            </li>
+
+            <li>
+                <a href="kpis.html">
+                    <i class="fas fa-bullseye"></i>
+                    KPIs
+                </a>
+            </li>
+
+            <li>
+                <a href="self_appraisal.html">
+                    <i class="fas fa-file-alt"></i>
+                    Self Appraisal
+                </a>
+            </li>
+
+            <li>
+                <a href="quarterly_review.html">
+                    <i class="fas fa-chart-line"></i>
+                    Quarterly Reviews
+                </a>
+            </li>
+
+            <li>
+                <a href="midyear_review.html">
+                    <i class="fas fa-chart-bar"></i>
+                    Mid-Year Review
+                </a>
+            </li>
+
+            <li>
+                <a href="annual_review.html">
+                    <i class="fas fa-award"></i>
+                    Annual Review
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fas fa-file-pdf"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <div class="topbar">
+
+            <h2>Employee Dashboard</h2>
+
+            <div class="user">
+                Welcome, Employee
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <a href="workplan.html">
+            <div class="card">
+                <i class="fas fa-tasks"></i>
+                <h3>Work Plans</h3>
+                <p>3 Active</p>
+            
+            </div>
+            </a>
+            <a href="kpis.html">
+            <div class="card">
+                <i class="fas fa-bullseye"></i>
+                <h3>KPIs </h3>
+                <p>12 Assigned</p>
+            </div>
+            </a>
+            <a href="quarterly_review.html">
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Quarterly Review</h3>
+                <p>Pending</p>
+            </div>
+            </a>
+            <a href="midyear_review.html">
+            <div class="card">
+                <i class="fas fa-award"></i>
+                <h3>Annual Appraisal</h3>
+                <p>Not Started</p>
+            </div>
+            </a>
+
+        </div>
+
+        <div class="dashboard-section">
+
+            <h3>Performance Overview</h3>
+
+            <table>
+
+                <tr>
+                    <th>Review</th>
+                    <th>Status</th>
+                </tr>
+               
+                <tr>
+                    
+                    <td>Q1 Review</td>
+                    <td>Completed</td>
+                </tr>
+                
+                <tr>
+                    <td>Q2 Review</td>
+                    <td>Pending</td>
+                </tr>
+
+                <tr>
+                    <td>Mid-Year Review</td>
+                    <td>Not Started</td>
+                </tr>
+              
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

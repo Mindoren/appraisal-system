@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Plans - Dashboard</title>
+    <link rel="stylesheet" href="css/workplan.css">
+     <script src="js/workplan.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-section">
+        <h1>My Work Plans</h1>
+        <button class="btn-create" id="showCreateFormBtn">Create Work Plan</button>
+    </div>
+
+    <div class="form-card hidden" id="createWorkplanForm">
+        <h2>New Work Plan</h2>
+        <div class="form-row">
+            <label for="objectiveInput">Objective</label>
+            <input id="objectiveInput" type="text" placeholder="Enter objective" />
+        </div>
+        <div class="form-row">
+            <label for="activityInput">Activity</label>
+            <input id="activityInput" type="text" placeholder="Enter activity" />
+        </div>
+        <div class="form-row">
+            <label for="timelineInput">Timeline</label>
+            <input id="timelineInput" type="text" placeholder="e.g. Q3, June 2026" />
+        </div>
+        <div class="form-row">
+            <label for="statusInput">Status</label>
+            <select id="statusInput">
+                <option>Planned</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+            </select>
+        </div>
+        <div class="form-actions">
+            <button class="btn-submit" id="submitWorkplanBtn" type="button">Save Work Plan</button>
+            <button class="btn-cancel" id="cancelWorkplanBtn" type="button">Cancel</button>
+        </div>
+        <p class="error-message" id="workplanError"></p>
+    </div>
+
+    <div class="table-responsive">
+        <table class="workplan-table">
+            <thead>
+                <tr>
+                    <th>Objective</th>
+                    <th>Activity</th>
+                    <th>Timeline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="workplanTableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
